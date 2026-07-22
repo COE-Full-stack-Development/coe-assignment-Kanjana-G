@@ -1,5 +1,3 @@
-(() => {
-
 let themeBtn = document.getElementById("toggle-theme-btn");
 let card = document.getElementById("profile-card");
 
@@ -12,17 +10,10 @@ let input = document.getElementById("skill-input");
 let list = document.getElementById("skills-list");
 
 addBtn.addEventListener("click", function () {
-
     if (input.value.trim() != "") {
-
         let li = document.createElement("li");
         li.innerText = input.value;
-
         list.appendChild(li);
-
         input.value = "";
     }
-
 });
-
-})();
