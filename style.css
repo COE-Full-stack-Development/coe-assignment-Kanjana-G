@@ -1,9 +1,28 @@
-#profile-card{
+
+#profile-card {
+    width: 300px;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
     background-color: white;
     color: black;
 }
 
-.dark-theme{
+
+#profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+#skills-list {
+    list-style-type: square;
+    text-align: left;
+}
+
+
+.dark-theme {
     background-color: black;
     color: white;
 }
