@@ -1,21 +1,21 @@
-const themeBtn = document.getElementById("toggle-theme-btn");
-const profileCard = document.getElementById("profile-card");
 
-themeBtn.addEventListener("click", function () {
-    profileCard.classList.toggle("dark-theme");
+document.getElementById("toggle-theme-btn").addEventListener("click", function () {
+    document.getElementById("profile-card").classList.toggle("dark-theme");
 });
 
-const addBtn = document.getElementById("add-skill-btn");
-const input = document.getElementById("skill-input");
-const skillsList = document.getElementById("skills-list");
 
-addBtn.addEventListener("click", function () {
-    const skill = input.value.trim();
+document.getElementById("add-skill-btn").addEventListener("click", function () {
 
-    if (skill !== "") {
-        const li = document.createElement("li");
-        li.textContent = skill;
-        skillsList.appendChild(li);
-        input.value = "";
+    let skill = document.getElementById("skill-input").value;
+
+    if (skill.trim() != "") {
+
+        let li = document.createElement("li");
+        li.innerText = skill;
+
+        document.getElementById("skills-list").appendChild(li);
+
+        document.getElementById("skill-input").value = "";
     }
+
 });
